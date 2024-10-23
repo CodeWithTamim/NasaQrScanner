@@ -31,42 +31,41 @@
         android:textSize="22sp"
         android:textStyle="bold" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/bnStartScan"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_margin="30dp"
-        android:foreground="?attr/selectableItemBackground"
-        android:padding="10dp"
-        app:cardBackgroundColor="@color/blue"
-        app:cardCornerRadius="12dp"
-        app:strokeColor="@color/blue">
+        android:orientation="vertical">
 
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/bnStartScan"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="horizontal"
-            android:padding="10dp">
+            android:layout_height="50dp"
+            android:backgroundTint="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Scan Now"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/scan_ic"
+            app:iconGravity="textStart" />
 
-            <ImageView
-                android:id="@+id/scanIc"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_gravity="center"
-                android:src="@drawable/scan_ic" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPickQr"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
+            android:text="Pick From Gallery"
+            app:cornerRadius="8dp"
+            app:icon="@drawable/baseline_attach_file_24"
+            app:iconGravity="textStart" />
 
-            <TextView
-                android:id="@+id/scanText"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:text="Scan Now"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-        </LinearLayout>
-    </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
 
 </RelativeLayout>
