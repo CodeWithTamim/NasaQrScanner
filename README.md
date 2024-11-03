@@ -13,7 +13,7 @@
 ## Requirements
 
 - **Android**: 5.0 (Lollipop) or later
-- **Kotlin**: Version 1.3 or later
+- **Kotlin**: Version  (latest)
 - **Android Studio**: 4.0 or later
 
 ## Installation
